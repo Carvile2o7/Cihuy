@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valentine</title>
+  <meta name="Neo" content="width=device-width, initial-scale=1.0">
+  <title>Neo Kgn</title>
   <style>
     body {
       margin: 0;
@@ -14,6 +14,24 @@
       background-color: #f8d7da;
       font-family: Arial, sans-serif;
       overflow: hidden;
+    }
+
+    /* Tulisan rahasia pojok kiri atas */
+    .pojok-kiri-atas {
+      position: fixed;
+      top: 8px;
+      left: 12px;
+      font-size: 12px;
+      font-family: monospace;
+      color: rgba(0, 0, 0, 0.5);
+      letter-spacing: 2px;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     /* Halaman pertama */
@@ -86,9 +104,12 @@
   </style>
 </head>
 <body>
+  <!-- Tulisan rahasia -->
+  <div class="pojok-kiri-atas">kangen</div>
+
   <!-- Halaman pertama -->
   <div id="page1">
-    <h1>APAKAH KAMU MEMAAFKAN AKU?</h1>
+    <h1>Coba pencet yang ada di bawah</h1>
     <div class="buttons">
       <button id="yesBtn">Iya</button>
       <button id="noBtn">Tidak</button>
@@ -99,10 +120,10 @@
   <!-- Halaman kedua -->
   <div id="page2">
     <h1>💖 Trimakasih 💖<br>
-    Sudah Memaafkan Aku </h1>
+    Sudah melihat </h1>
     <p>
-      Nice, udah clear.<br>
-      Jadi jangan ngambek lagi, kita gas lanjut Main Roblox aja
+      aku penge nunjukin.<br>
+      aku bisa buat ini dan coba liat di atas
     </p>
   </div>
 
